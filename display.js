@@ -52,7 +52,7 @@ function displayGetSettings() {
 
     // remove tabs, split settings and call function to apply them
     if (settings.length > 0) {
-      let content = settings[0].innerText.replace(/\t+/gm, "");
+      let content = settings[0].innerText.replace(/[\t ]+/gm, "");
       let lines = content.split("\n");
 
       for (let j = 0; j < lines.length; j++) {
