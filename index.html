@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<div id="display">
+		<!-- Slides -->
+		<div id="active" class="slide">
+			<div class="settings">
+				background-color:lightblue
+				font-family:h3:helvetica
+				font-family:p:helvetica
+			</div>
+			<h1>Introduction</h1>
+			<hr>
+			<h3>Hello there world!</h3>
+			<p>This is Display! A less than 2KB HTML presenter with easy CSS customization!</p>
+			<p>Display provides a way to show HTML code in a presentation format.</p>
+			<p>While it is possible (and very easy) to add markdown support / conversion if needed, it also takes up more space.</p>
+			<br>
+			<img src="https://www.freecodecamp.org/news/content/images/2019/07/panel-1-1.png">
+			<p><i>You can use the arrow < > keys to navigate between slides</i></p> 
+		</div>
+
+		<div class="slide">
+			<div class="settings">
+				text-align:h2:center
+				background-color:darksalmon
+				font-family:p:helvetica
+				font-family:ul:helvetica
+			</div>
+
+			<h2>Easy CSS</h2>
+			<hr>
+			<p>CSS can be accessed directly from HTML, and be different on each slide.</p>
+			<p>This is what the CSS from the HTML document looks like for this slide:</p>
+<pre>
+text-align:h2:center
+background-color:darksalmon
+font-family:p:helvetica
+fontFamily:ul:helvetica
+</pre>
+			<p>As you can see on this slide, the title at the top is centered as shown in the CSS</p>
+			<p>JavaScript by default allows you to access styles with camelCase as well. So you could write the CSS above like so:</p>
+<pre>
+textAlign:h2:center
+backgroundColor:darksalmon
+fontFamily:p:helvetica
+fontFamily:ul:helvetica
+</pre>
+			<p>It is pretty straightforward:</p>
+			<pre>a:b:c</pre>
+			<ul>
+				<li>a: is the css property you want to change for the ELEMENT</li>
+				<li>b: is the tag you want to affect</li>
+				<li>c: is the value the CSS property should have</li>
+			</ul>
+			<p>So the following would select all &lt;p&gt; tags and give it the color blue: 
+			<pre>color:p:blue</pre>
+			<p>When there's only:</p>
+			<pre>a:b</pre>
+			<ul>
+				<li>a: is the CSS property you want to change for the SLIDE</li>
+				<li>b: is the value the CSS property should have</li>
+			</ul>
+			<p>So to make all the text on the slide bold:</p>
+			<pre>fontWeight:bold</pre>
+		</div>
+
+		<div class="slide">
+			<div class="settings">
+				text-align:center
+				font-family:p:helvetica
+				background-color:lightgreen
+			</div>
+			<h1>Start using Display!</h1>
+			<hr>
+			<h3>Display is available on <a href="https://github.com/BenStigsen/Display">GitHub</a></h3>
+			<p>Contributions and suggestions are very welcome!</p>
+		</div>
+		<!-- Slides -->
+	</div>
+
+	<!-- Initialization -->
+	<script type="text/javascript" src="./display.js"></script>
+	<script type="text/javascript">displayInit();</script>
+	<!-- Initialization -->
+</body>
+</html>
